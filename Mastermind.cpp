@@ -2,12 +2,14 @@
  class Mastermind{
     public:
     Mastermind(int redondance=0, int tailleCode=NB,  int nbEssaisMax=MAX);
-    void usage();
-    void choisirSolution();
-    void saisirEssai();
-    void verifierEssai();
-    void afficherResultat();
-    bool estFini();
+    void usage();           
+    void choisirSolution(); 
+    void saisirEssai();     
+    void verifierEssai();   
+
+    void afficherResultat(); 
+
+    bool estFini();          
 
     ~Mastermind();
 
