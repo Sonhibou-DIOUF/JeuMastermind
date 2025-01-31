@@ -1,3 +1,5 @@
+#ifndef MASTERMIND_H
+#define MASTERMIND_H
 
 // Valeurs par défaut 
 #define NB  4 // nombre de poins dans le code secret 
@@ -8,7 +10,7 @@ class Mastermind
 {
     public :
 
-    Mastermind(int redondance=0, int tailleCode=NB,  int nbEssaisMax=MAX);
+    Mastermind(int redondance=0, int tailleCode=NB,  int nbEssaisMax=MAX); // constructeur par défaut
 
     void usage();              //   aﬃche un texte informatif sur le jeu;
     void choisirSolution();    //   détermine aléatoirement la combinaison secrète et initialise une nouvelle manche;
@@ -21,5 +23,11 @@ class Mastermind
                                     dévoilant la combinaison secrète en cas de défaite du joueur);
                                 */
     bool estFini();            //  retourne vrai (true) si la manche est fini sinon faux (false).
- 
+    int  Mastermind::bienPlaces();
+    int  Mastermind::malPlaces();
+    ~Mastermind();             // destructeur
 };
+
+
+
+#endif
